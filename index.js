@@ -114,7 +114,7 @@ function rotateHandler(id) {
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.reset-filters').addEventListener('click', (e) => {
         document.querySelector('#edit-range').value = '0';
-        document.querySelector('.percent').textContent = '0'
+        document.querySelector('.percent').textContent = ''
         img.style.filter = resetFilters()
         document.querySelector('.label-1').textContent = ''
         currentRotation = 0;
