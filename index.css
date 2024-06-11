@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: rgb(242, 242, 242);
+  width: 700px;
+  height: 500px;
+  display: flex;
+  margin: 50px;
+  padding: 40px;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+}
+
+.editor-reset {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 250px;
+  height: 400px; /* Same height as .image-holder */
+}
+
+.image-editor {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(227, 227, 227);
+  width: 250px;
+  height: 400px; /* Same height as .image-holder */
+  gap: 10px;
+  padding: 20px;
+  border: 0.5px;
+  box-shadow: 0 4px 8px rgba(128, 46, 46, 0.1);
+  border-radius: 8px;
+}
+
+.button-holder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  height: 100px; /* Height to accommodate two rows of buttons */
+}
+
+.buttons {
+  width: calc(50% - 6px); /* Adjust width to fit 3 buttons per row */
+  height: 30px;
+  font-size: 10px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: rgb(13, 184, 241);
+  color: black;
+  border: none;
+}
+
+.label {
+  margin: 0px;
+  width: 100%;
+}
+
+.percent {
+  left: 40px;
+  float: right;
+}
+
+#edit-range {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.rotate-flip {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px; /* Adjusted to fit within the container */
+}
+
+.flip-rotate {
+  width: 30px; /* Fixed width */
+  height: 30px; /* Fixed height */
+  border: none;
+  border-radius: 4px; /* Optional: Adds rounded corners for aesthetics */
+}
+
+.flip-rotate:hover {
+  background-color: rgb(13, 184, 241);
+}
+
+.wrapper-image-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure even spacing */
+  align-items: flex-start;
+  width: 300px;
+  height: 400px;
+  gap: 20px;
+}
+
+.image-holder {
+  width: 300px;
+  height: 400px;
+  /* background-color: brown; */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* position: relative; */
+}
+
+.image-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.wrapper-image-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px; /* Add some gap between buttons */
+  width: 100%;
+}
+
+.image-upload {
+  width: 100px;
+  height: 30px;
+  font-size: 10px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  transition: background-color 0.3s;
+}
+
+.image-upload:hover {
+  background-color: rgb(13, 184, 241);
+  color: black;
+  border: none;
+}
+
+.reset-filters {
+  width: 100px;
+  height: 30px;
+  font-size: 10px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  transition: background-color 0.3s;
+}
+
+.reset-filters:hover {
+  background-color: rgb(13, 184, 241);
+  color: black;
+  border: none;
+}
