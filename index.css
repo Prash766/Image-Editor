@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
   background-color: rgb(242, 242, 242);
   width: 700px;
